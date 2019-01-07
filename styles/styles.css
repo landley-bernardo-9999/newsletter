@@ -264,7 +264,7 @@ h1::after{
 }
 
 .price-content ul li{
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid #fff;
     padding: 15px 10px;
     list-style: none;
 }
@@ -282,7 +282,17 @@ ul li:last-child{
 
 .fa-check-circle{
     color: green;
+    margin-right: 10px;
+    font-size: 20px;
 }
+
+/* .price-btn{
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+} */
 
 .inquire-btn{
     background-color: #2196f3;
@@ -293,7 +303,7 @@ ul li:last-child{
     transition: 0.5s;
 }
 
-.inquire-btn:hover{
+.#offers .transient:hover{
     border-color: 1px solid #fff;
     background-color: #3f51b5;
 }
@@ -303,3 +313,21 @@ a{
     color: #fff!important;
 }
 
+.price-head .duration{
+    font-size: 18px;
+    color: black;
+}
+
+
+.skills-bar span{
+    font-size: 20px;
+}
+
+#slider .col-md-3 .news{
+    margin-top: 60px;
+    border: solid 1px black;
+    margin-left: 0;
+}
+.col-md-3 .news h1{
+    font-size: 20px; 
+}
