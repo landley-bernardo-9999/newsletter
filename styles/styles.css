@@ -1,3 +1,10 @@
+:root{
+    --martha-img: url(/img/rawpixel-1065668-unsplash.jpg);
+    --north-cambridge-img: url(/img/brooke-cagle-609873-unsplash.jpg);
+    --the-courtyards-img: url(/img/rawpixel-741658-unsplash.jpg);
+    --marthas-rooms-img: url(/img/wes-hicks-1103983-unsplash.jpg);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -44,20 +51,13 @@
 /* Slider */
 
 #slider img{
-    height: 90vh;
+    height: 65vh;
     width: 100%;
 }
-.carousel-caption{
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: initial!important;
-}
 
-.carousel-caption h5{
-    color: #000;
-    font-size: 42px;
+#slider{
+    margin-top: -2  %;
 }
-
 
 /* About the company */
 
@@ -320,14 +320,141 @@ a{
 
 
 .skills-bar span{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #slider .col-md-3 .news{
     margin-top: 60px;
-    border: solid 1px black;
+    
     margin-left: 0;
 }
 .col-md-3 .news h1{
     font-size: 20px; 
 }
+
+#slider .col-md-3{
+    margin: 0;
+    padding: 0;
+}
+
+
+.martha-img{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), var(--martha-img);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    filter: grayscale(1);
+}
+
+.north-cambridge-img{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),var(--north-cambridge-img);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    filter: grayscale(1);
+}
+
+.the-courtyards-img{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),var(--the-courtyards-img);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    filter: grayscale(1);
+}
+
+.marthas-rooms-img{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),var(--marthas-rooms-img);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    filter: grayscale(1);
+}
+
+.news p{
+    text-align: left;
+    margin-left: 2%;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#slider .news p a:hover{
+    text-decoration: underline!important;
+}
+
+.martha-img:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--martha-img);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    filter: grayscale(0);
+}
+
+.north-cambridge-img:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--north-cambridge-img);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    filter: grayscale(0);
+}
+
+.the-courtyards-img:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--the-courtyards-img);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    filter: grayscale(0);
+}
+
+.marthas-rooms-img:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--marthas-rooms-img);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    filter: grayscale(0);
+}
+
+
+/* Get in touch */
+
+#contact{
+    background-color: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+
+.contact-form{
+    padding: 15px;
+}
+
+.form-control{
+    border-radius: 0%!important;
+    border: none!important;
+}
+
+::placeholder{
+    color: #999!important;
+}
+
+.follow{
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+
+.contact-info .fa, .fab{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Footer */
+
+#footer{
+    background: #333;
+    padding: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#container
