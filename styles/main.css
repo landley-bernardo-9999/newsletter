@@ -1,8 +1,13 @@
 :root{
-    --martha-img: url(/img/rawpixel-1065668-unsplash.jpg);
-    --north-cambridge-img: url(/img/brooke-cagle-609873-unsplash.jpg);
-    --the-courtyards-img: url(/img/rawpixel-741658-unsplash.jpg);
-    --marthas-rooms-img: url(/img/wes-hicks-1103983-unsplash.jpg);
+    --martha-img: url(/img/christmas-party.jpg);
+    --north-cambridge-img: url(/img/customer-service.jpg);
+    --the-courtyards-img: url(/img/room-vacancy.jpg);
+    --marthas-rooms-img: url(/img/better-perks.jpg);
+
+    --martha-img-height: 400px;
+    --north-cambridge-img-height: 400px;
+    --the-courtyards-img-height: 400px;
+    --marthas-rooms-img-height: 400px;
 }
 
 *{
@@ -330,7 +335,7 @@ a{
 }
 .col-md-3 .news h1{
     font-size: 20px; 
-}
+}   
 
 #slider .col-md-3{
     margin: 0;
@@ -339,34 +344,38 @@ a{
 
 
 .martha-img{
+    cursor: pointer;
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), var(--martha-img);
     background-size: cover;
     background-position: center;
-    height: 450px;
+    height: var(--martha-img-height);
     filter: grayscale(1);
 }
 
 .north-cambridge-img{
+    cursor: pointer;
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),var(--north-cambridge-img);
     background-size: cover;
     background-position: center;
-    height: 450px;
+    height: var(--north-cambridge-img-height);
     filter: grayscale(1);
 }
 
 .the-courtyards-img{
+    cursor: pointer;
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),var(--the-courtyards-img);
     background-size: cover;
     background-position: center;
-    height: 450px;
+    height: var(--the-courtyards-img-height);
     filter: grayscale(1);
 }
 
 .marthas-rooms-img{
+    cursor: pointer;
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),var(--marthas-rooms-img);
     background-size: cover;
     background-position: center;
-    height: 450px;
+    height: var(--marthas-rooms-img-height);
     filter: grayscale(1);
 }
 
@@ -384,32 +393,36 @@ a{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--martha-img);
     background-size: cover;
     background-position: center;
-    height: 450px;
+    height: var(--martha-img-height);
     filter: grayscale(0);
+    transform: scale(1.1,1.1);    
 }
 
 .north-cambridge-img:hover{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--north-cambridge-img);
     background-size: cover;
     background-position: center;
-    height: 450px;
+    height: var(--north-cambridge-img-height);
     filter: grayscale(0);
+    transform: scale(1.1,1.1); 
 }
 
 .the-courtyards-img:hover{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--the-courtyards-img);
     background-size: cover;
     background-position: center;
-    height: 450px;
+    height: var(--the-courtyards-img-height);
     filter: grayscale(0);
+    transform: scale(1.1,1.1); 
 }
 
 .marthas-rooms-img:hover{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--marthas-rooms-img);
     background-size: cover;
     background-position: center;
-    height: 450px;
+    height: var(--marthas-rooms-img-height);
     filter: grayscale(0);
+    transform: scale(1.1,1.1); 
 }
 
 
@@ -457,4 +470,57 @@ a{
     font-family: sans-serif;
 }
 
-#container
+#properties{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.north-cambridge img{
+    height: 200px;
+}
+
+.e-street img{
+    height: 200px;;
+}
+
+.the-courtyards img{
+    height: 200px;;
+}
+
+#properties{
+    text-align: center;
+}
+
+.figure-caption{
+    padding-top: 5px;   
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#header{
+    text-align: center;
+}
+
+#header h1{
+    padding-top: 50px;
+}
+
+.article{
+    font-family: sans-serif;
+    text-align: justify ;
+}
+
+.christmas-party-2018-cover-img img{
+    height: 400px;
+}
+
+.more-focus-on-customer-service img{
+    height: 400px;
+}
+
+.more-available-units-for-lease img{
+    height: 400px;
+}
+.better-perks img{
+    height: 400px;
+}
